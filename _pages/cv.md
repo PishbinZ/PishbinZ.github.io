@@ -1,8 +1,10 @@
 ---
 title: "CV"
 permalink: /cv/
-layout: single
+layout: page
 ---
+
+Here is my latest CV.
 
 <iframe src="{{ '/files/CV.pdf' | relative_url }}" width="100%" height="900px" style="border:none;"></iframe>
 

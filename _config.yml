@@ -9,10 +9,8 @@ baseurl: ""          # keep empty for username.github.io sites
 # Use a stable GitHub Pages supported theme
 theme: minima
 
-# Optional: used by some plugins/themes for links
 repository: "PishbinZ/PishbinZ.github.io"
 
-# Author (minima can use these; harmless if not)
 author:
   name: "Zein Pishbin"
   email: "zeinab.s.pishbin@gmail.com"
@@ -21,7 +19,6 @@ author:
   googlescholar: "https://scholar.google.com/citations?user=qSy13-cAAAAJ"
   avatar: "files/profile.png"
 
-# Make sure Jekyll includes these folders in the build
 include:
   - _pages
   - files
@@ -29,7 +26,6 @@ include:
 
 markdown: kramdown
 
-# Default layout for your _pages/*.md
 defaults:
   - scope:
       path: "_pages"
@@ -39,3 +35,10 @@ defaults:
 
 plugins:
   - jekyll-sitemap
+
+# Only show these pages in the top navigation (see _includes/header.html)
+header_pages:
+  - _pages/home.md
+  - _pages/publications.md
+  - _pages/teaching.md
+  - _pages/cv.md

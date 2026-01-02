@@ -1,10 +1,13 @@
 ---
 title: "Publications"
 permalink: /publications/
-layout: single
+layout: page
 ---
 
-{% for pub in site.publications reversed %}
-- **{{ pub.title }}**{% if pub.venue %}, {{ pub.venue }}{% endif %} ({{ pub.year }})
-  {% if pub.paperurl %}- [Paper]({{ pub.paperurl }}){% endif %}
-{% endfor %}
+1. **[Fairness in the Multi-Secretary Problem](https://arxiv.org/abs/2511.23097)**  
+   Georgios Papasotiropoulos, Zein Pishbin  
+   *In Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI), 2026*
+
+2. **[Method of Equal Shares with Bounded Overspending](https://dl.acm.org/doi/pdf/10.1145/3736252.3742637)**  
+   Georgios Papasotiropoulos, Seyedeh Zeinab Pishbin, Oskar Skibski, Piotr Skowron, Tomasz Wąs  
+   *In Proceedings of the 26th ACM Conference on Economics and Computation (EC), 2025*

@@ -16,10 +16,22 @@ html.dark {
   color: #e8e8e8;
 }
 
-html.dark a { color: inherit; text-decoration: underline; }
-html.dark .page__content,
-html.dark .archive,
-html.dark .sidebar,
-html.dark .masthead {
+html.dark body {
   background: transparent;
+  color: inherit;
+}
+
+html.dark a { color: inherit; text-decoration: underline; }
+
+/* Minima elements */
+html.dark .site-header,
+html.dark .site-footer,
+html.dark .page-content {
+  background: transparent;
+}
+
+/* Slightly tone down default light borders in dark mode */
+html.dark .site-header,
+html.dark .site-footer {
+  border-color: rgba(232, 232, 232, 0.2);
 }
