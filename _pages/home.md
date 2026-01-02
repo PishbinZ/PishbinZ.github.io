@@ -1,8 +1,11 @@
 ---
-title: "Home"
+title: "About"
 permalink: /
 layout: page
+hide_title: true
 ---
+
+## About
 
 I’m **Zein**, a second-year Master’s student at **PSL University**, specializing in **Artificial Intelligence, Systems, and Data**.
 
@@ -12,4 +15,4 @@ My current research focuses on **computational social choice**, particularly **p
 
 For more details, please check my [CV]({{ '/cv/' | relative_url }}) or contact me by email at [zeinab.s.pishbin@gmail.com](mailto:zeinab.s.pishbin@gmail.com).
 
-My full name is **Seyedehzeinab**, but I go by **Zein**.
+*My full name is **Seyedehzeinab**, but I go by **Zein**.*

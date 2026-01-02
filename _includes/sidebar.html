@@ -1,0 +1,50 @@
+<aside class="sidebar">
+  <div class="sidebar-card">
+    {% if site.author.avatar %}
+      <img class="avatar" src="{{ site.author.avatar | relative_url }}" alt="{{ site.title | escape }}">
+    {% endif %}
+
+    <div class="sidebar-name">{{ site.author.name | default: site.title }}</div>
+
+    {% if site.author.role %}
+      <div class="sidebar-role">{{ site.author.role }}</div>
+    {% endif %}
+
+    <div class="sidebar-links">
+      {% if site.author.location %}
+        <div class="sidebar-item">
+          <span class="icon">📍</span>
+          <span>{{ site.author.location }}</span>
+        </div>
+      {% endif %}
+
+      {% if site.author.email %}
+        <div class="sidebar-item">
+          <span class="icon">✉️</span>
+          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </div>
+      {% endif %}
+
+      {% if site.author.linkedin %}
+        <div class="sidebar-item">
+          <span class="icon">in</span>
+          <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      {% endif %}
+
+      {% if site.author.github %}
+        <div class="sidebar-item">
+          <span class="icon">🐙</span>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      {% endif %}
+
+      {% if site.author.googlescholar %}
+        <div class="sidebar-item">
+          <span class="icon">🎓</span>
+          <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</aside>

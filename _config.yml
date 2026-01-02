@@ -36,9 +36,7 @@ defaults:
 plugins:
   - jekyll-sitemap
 
-# Only show these pages in the top navigation (see _includes/header.html)
 header_pages:
-  - _pages/home.md
   - _pages/publications.md
   - _pages/teaching.md
   - _pages/cv.md

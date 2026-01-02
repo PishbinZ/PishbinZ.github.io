@@ -1,37 +1,210 @@
-.theme-toggle {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  padding: 0.4rem;
-  border-radius: 999px;
-  line-height: 0;
-}
+/* --- Modern, clean academic styling (works with Minima) --- */
+:root {
+  --bg: #ffffff;
+  --text: #1b1f24;
+  --muted: #606770;
+  --card: #f6f7f9;
+  --border: rgba(0,0,0,0.08);
+  --link: #0b66c3;
 
-.theme-toggle:hover {
-  opacity: 0.85;
+  --radius: 18px;
+  --shadow: 0 6px 22px rgba(0,0,0,0.06);
+
+  --max: 1080px;
 }
 
 html.dark {
-  background: #0b0d10;
-  color: #e8e8e8;
+  --bg: #0b0d10;
+  --text: #e9eef5;
+  --muted: rgba(233,238,245,0.70);
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.14);
+  --link: #88bdf6;
 }
 
-html.dark body {
-  background: transparent;
-  color: inherit;
+html, body { background: var(--bg); color: var(--text); }
+
+.wrapper {
+  max-width: var(--max);
 }
 
-html.dark a { color: inherit; text-decoration: underline; }
-
-/* Minima elements */
-html.dark .site-header,
-html.dark .site-footer,
-html.dark .page-content {
-  background: transparent;
+body {
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Slightly tone down default light borders in dark mode */
-html.dark .site-header,
-html.dark .site-footer {
-  border-color: rgba(232, 232, 232, 0.2);
+a { color: var(--link); }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.page-link {
+  color: var(--text);
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.page-link:hover { opacity: 1; text-decoration: none; }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  cursor: pointer;
+}
+
+.theme-toggle:hover { transform: translateY(-1px); }
+
+/* --- Layout: sidebar + main --- */
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+  padding: 28px 0;
+}
+
+.sidebar-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  position: sticky;
+  top: 18px;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.sidebar-name {
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-role {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sidebar-links {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sidebar-item a {
+  color: var(--text);
+  opacity: 0.9;
+  text-decoration: none;
+}
+.sidebar-item a:hover { opacity: 1; }
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* --- Main content area --- */
+.main {
+  min-width: 0;
+}
+
+.content {
+  background: var(--bg);
+}
+
+.page-title {
+  font-size: 44px;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.6px;
+}
+
+.page-body p { margin: 0 0 14px 0; }
+.page-body h2 { margin-top: 24px; font-size: 26px; }
+.page-body h3 { margin-top: 18px; font-size: 18px; }
+
+.page-body ul { margin-top: 8px; }
+.page-body li { margin: 6px 0; }
+
+/* CV iframe */
+.page-body iframe {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-card {
+    position: static;
+  }
+  .page-title { font-size: 36px; }
 }
