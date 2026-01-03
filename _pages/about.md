@@ -15,5 +15,5 @@ My current research focuses on **computational social choice**, particularly pro
 
 For more details, please check my [CV](/cv/) or contact me by email.
 
-> *Note:* My full name is **Seyedehzeinab**, but I go by **Zein**.
+> *Note: My full name is Seyedehzeinab, but I go by Zein.*
 
