@@ -6,38 +6,60 @@ author_profile: true
 ---
 
 <style>
-.teaching-section h2 {
-  color: #467E8F;
+:root {
+  --accent-color: #467E8F;
+  --text-primary: #1f2933;
+  --text-secondary: #5f6f7a;
+  --bg-soft: #f3f6f8;
+}
+
+[data-theme="dark"] {
+  --text-primary: #e5e7eb;
+  --text-secondary: #aab4bf;
+  --bg-soft: #1f2933;
+}
+
+.teaching-section {
+  color: var(--text-primary);
+}
+
+.teaching-institution {
+  color: var(--accent-color);
   font-weight: 700;
+  font-size: 1.45rem;
+  margin-bottom: .3em;
+}
+
+.teaching-subtitle {
+  color: var(--text-secondary);
+  font-size: .95rem;
+  margin-bottom: 1.1em;
 }
 
 .teaching-course {
-  color: #2c2c2c;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.1rem;
   margin-top: 1.2em;
 }
 
 .teaching-list {
-  list-style-type: square;
   margin-left: 1.2em;
+  margin-top: .3em;
 }
 
 .teaching-list li {
-  margin: 0.3em 0;
+  margin: .25em 0;
+  color: var(--text-secondary);
 }
 
-.teaching-institution {
-  color: #467E8F;
-  font-weight: 700;
-  font-size: 1.6em;
-  margin-bottom: 0.5em;
+.teaching-list strong {
+  color: var(--text-primary);
 }
 
-.teaching-subtitle {
-  color: #7fa3ad;
-  font-size: 0.95em;
-  margin-top: -0.4em;
-  margin-bottom: 1.2em;
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--bg-soft);
 }
 </style>
 
