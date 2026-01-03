@@ -25,7 +25,7 @@ repository        : "PishbinZ/PishbinZ.github.io"
 # Site Author (Sidebar)
 # =========================
 author:
-  avatar          : "files/profile.png"
+  avatar          : "/files/profile.png"
   name            : "Zein Pishbin"
   pronouns        :
   bio             : "Master's student"
