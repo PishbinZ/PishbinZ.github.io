@@ -69,7 +69,7 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
 
   <div class="pub-item">
     <div class="pub-title-row">
-      <span class="pub-badge">C1</span>
+      <span class="pub-badge">C2</span>
       <div class="pub-title">Fairness in the Multi-Secretary Problem</div>
       <div class="pub-icon">
         <a href="https://arxiv.org/pdf/2511.23097.pdf" aria-label="PDF">
@@ -89,7 +89,7 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
 
   <div class="pub-item">
     <div class="pub-title-row">
-      <span class="pub-badge">C2</span>
+      <span class="pub-badge">C1</span>
       <div class="pub-title">Method of Equal Shares with Bounded Overspending</div>
       <div class="pub-icon">
         <a href="https://dl.acm.org/doi/pdf/10.1145/3736252.3742637" aria-label="PDF">
