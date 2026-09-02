@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I’m Zein, a second-year Master’s student at PSL University, specializing in Artificial Intelligence, Systems, and Data.
+I’m Zein, a first-year PhD Candidate at the Institute for Logic, Language and Computation [(ILLC)](https://www.illc.uva.nl) at the University of Amsterdam, where I am fortunate to be supervised by [Ulle Endriss](https://staff.science.uva.nl/u.endriss/).
 
-Before joining PSL, I was a research intern at the University of Warsaw, where I had the privilege of working under the supervision of [Piotr Skowron](https://duch.mimuw.edu.pl/~ps219737/).
+Before joining ILLC, I had the privilege of collaborating with [Piotr Skowron](https://duch.mimuw.edu.pl/~ps219737/) and [Dominik Peters](https://dominik-peters.de) as an intern.
 
 My current research focuses on ***computational social choice***, particularly proportionality in voting settings. More broadly, I am interested in the algorithmic aspects of collective decision-making, fairness, and strategic behavior.
 
